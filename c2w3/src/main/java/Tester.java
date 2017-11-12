@@ -30,7 +30,7 @@ public class Tester
     @Test
     public void testUniqIP(){
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\WebLogProgram\\short-test_log");
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
         int uniqueIPs = la.countUniqueIPs();
         System.out.println("There are " + uniqueIPs + " IPs");
     }
@@ -47,19 +47,20 @@ public class Tester
     @Test
     public void testUniqueIPVisitsOnDay(){
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\UniqueIPData\\weblog1_log");
-        ArrayList<String> dailyIPs = la.uniqueIPVisitsOnDay("Mar 17");
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        ArrayList<String> dailyIPs = la.uniqueIPVisitsOnDay("Sep 24");
         for (String s : dailyIPs){
             System.out.println(s);
         }
+        System.out.println(dailyIPs.size());
     }
 
     @Test
     public void testCountUniqueIPsInRange(){
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\UniqueIPData\\weblog1_log");
-        int low = 300;
-        int high = 399;
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        int low = 400;
+        int high = 499;
         int uniqueIPs = la.countUniqueIPsInRange(low,high);
         System.out.println("There are " + uniqueIPs + " IPs between Status Code " + low + " and " + high);
     }
@@ -79,4 +80,47 @@ public class Tester
         HashMap<String, Integer> counts = la.countVisitsPerIP();
         System.out.println(counts.size());
     }
+
+    @Test
+    public void testMostNumberVisitsByIP() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        HashMap<String, Integer> counts = la.countVisitsPerIP();
+        System.out.println(la.mostNumberVisitsByIP(counts));
+    }
+
+    @Test
+    public void testIPsMostVisits() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        HashMap<String, Integer> counts = la.countVisitsPerIP();
+        System.out.println(la.iPsMostVisits(counts));
+    }
+
+
+
+    @Test
+    public void testIPsForDays() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog1_log");
+        HashMap<String,ArrayList<String>> daysAndIPs = la.iPsForDays();
+        System.out.println(daysAndIPs);
+    }
+
+    @Test
+    public void testDayWithMostIPVisits() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        HashMap<String,ArrayList<String>> daysAndIPs = la.iPsForDays();
+        System.out.println(la.dayWithMostIPVisits(daysAndIPs));
+    }
+
+    @Test
+    public void testIPsWithMostVisitsOnDay() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\weblog2_log");
+        HashMap<String,ArrayList<String>> daysAndIPs = la.iPsForDays();
+        System.out.println(la.iPsWithMostVisitsOnDay(daysAndIPs,"Sep 29"));
+    }
+
 }
