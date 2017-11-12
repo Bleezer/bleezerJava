@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="c2w3" />
+        <module name="CeaserCipher" />
+        <module name="CharactersInPlay" />
+        <module name="CodonCount" />
+        <module name="CommonWords" />
+        <module name="dice" />
+        <module name="GladLib" />
+        <module name="testing" />
+        <module name="WordFrequencies" />
+        <module name="WordLengths" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bleezer" target="1.5" />
+      <module name="c2w3" target="1.5" />
+      <module name="CeaserCipher" target="1.5" />
+      <module name="CharactersInPlay" target="1.5" />
+      <module name="CodonCount" target="1.5" />
+      <module name="CommonWords" target="1.5" />
+      <module name="dice" target="1.5" />
+      <module name="GladLib" target="1.5" />
+      <module name="testing" target="1.5" />
+      <module name="WordFrequencies" target="1.5" />
+      <module name="WordLengths" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

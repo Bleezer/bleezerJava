@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CeaserCipher/CeaserCipher.iml" filepath="$PROJECT_DIR$/CeaserCipher/CeaserCipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CharactersInPlay/CharactersInPlay.iml" filepath="$PROJECT_DIR$/CharactersInPlay/CharactersInPlay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodonCount/CodonCount.iml" filepath="$PROJECT_DIR$/CodonCount/CodonCount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonWords/CommonWords.iml" filepath="$PROJECT_DIR$/CommonWords/CommonWords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GladLib/GladLib.iml" filepath="$PROJECT_DIR$/GladLib/GladLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordFrequencies/WordFrequencies.iml" filepath="$PROJECT_DIR$/WordFrequencies/WordFrequencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordLengths/WordLengths.iml" filepath="$PROJECT_DIR$/WordLengths/WordLengths.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bleezer.iml" filepath="$PROJECT_DIR$/bleezer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c2w3/c2w3.iml" filepath="$PROJECT_DIR$/c2w3/c2w3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dice/dice.iml" filepath="$PROJECT_DIR$/dice/dice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing/testing.iml" filepath="$PROJECT_DIR$/testing/testing.iml" />
+    </modules>
+  </component>
+</project>
