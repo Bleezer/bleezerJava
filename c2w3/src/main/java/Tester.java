@@ -63,4 +63,20 @@ public class Tester
         int uniqueIPs = la.countUniqueIPsInRange(low,high);
         System.out.println("There are " + uniqueIPs + " IPs between Status Code " + low + " and " + high);
     }
+
+    @Test
+    public void testCountVisitsPerIP(){
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\UniqueIPData\\short-test_log");
+        HashMap<String,Integer> counts = la.countVisitsPerIP();
+        System.out.println(counts);
+    }
+
+    @Test
+    public void testCountVisitsPerIPcount() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("C:\\workspace\\Java\\stuffs\\c2w3\\UniqueIPData\\short-test_log");
+        HashMap<String, Integer> counts = la.countVisitsPerIP();
+        System.out.println(counts.size());
+    }
 }
