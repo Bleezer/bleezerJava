@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="c2w3" />
+        <module name="c2w4" />
         <module name="CeaserCipher" />
         <module name="CharactersInPlay" />
         <module name="CodonCount" />
@@ -21,6 +22,7 @@
     <bytecodeTargetLevel>
       <module name="bleezer" target="1.5" />
       <module name="c2w3" target="1.5" />
+      <module name="c2w4" target="1.5" />
       <module name="CeaserCipher" target="1.5" />
       <module name="CharactersInPlay" target="1.5" />
       <module name="CodonCount" target="1.5" />

@@ -19,6 +19,7 @@
         <module>GladLib</module>
         <module>CodonCount</module>
         <module>c2w3</module>
+        <module>c2w4</module>
     </modules>
 
     <properties>

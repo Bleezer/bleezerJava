@@ -16,7 +16,7 @@
     <orderEntry type="module-library">
       <library name="Maven: coursera:com.coursera:1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/repo/courserajava.jar!/" />
+          <root url="jar://$MODULE_DIR$/../bleezer/src/main/resources/repo/courserajava.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
